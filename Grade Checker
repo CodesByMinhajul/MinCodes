@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(){
+int n;
+printf("Enter the grades-");
+scanf("%d",&n);
+if(n<=100 && n>=80)
+{
+    printf("A+ Grade achieved");
+}
+else if(n<=79 && n>=70)
+{
+    printf("B+ Grade achieved");
+}
+else if(n<=69 && n>=60)
+{
+    printf("C+ Grade achieved");
+}
+else if(n<=59 && n>=50)
+{
+    printf("D+ Grade achieved");
+}
+else
+{
+    printf("F grade achieved");
+}   
+    return 0;
+}
