@@ -2,13 +2,13 @@
 int main()
 {
     int n;
-    printf("Enter Number for year-");
+    printf("Enter Number for month-");
     scanf("%d",&n);
     if(n==1)
     printf("31 days");
-    else if(n==3)
+    else if(n==2)
     printf("28 days");
-    else if(n==4)
+    else if(n==3)
     printf("31 days");
     else if(n==4)
     printf("30 days");
