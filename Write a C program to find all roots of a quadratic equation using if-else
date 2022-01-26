@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() 
+{
+    float a,b,c,d,root1,root2,imaginary;
+    printf("Enter the variables-");
+    scanf("%f%f%f",&a,&b,&c);
+    d = b*b-4*a*c;
+    if(d>0)
+    {
+        root1 = (-b+sqrt(d))/(2*a);
+        root2 = (-b-sqrt(d))/(2*a);
+        printf(" 2 distinct & real roots exist: %.2f and %.2f",root1,root2);
+        
+    }
+    else if (d == 0)
+    {
+        root1=root2= -b/(2*a);
+        printf(" 2 equal and real roots exist : %.2f and %.2f ",root1,root2);
+    }
+    else if(d < 0)
+    {
+        root1 = -b/(2*a);
+        root2 = -b/(2*a);
+        imaginary = sqrt(-d)/(2*a);
+        printf("Two distinct complex roots exits : %.2f + i%.2f and %.2f - i%.2f",root1,imaginary,root2,imaginary);
+    }
+    return 0;
+}
